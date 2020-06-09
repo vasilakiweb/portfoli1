@@ -1,0 +1,22 @@
+
+// Fonts
+@mixin raleway {
+    font-family: 'Raleway', sans-serif;
+}
+@mixin font-sw ($size, $weight) {
+    font-size: $size;
+    font-weight: $weight;
+}
+
+// Flex center
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// Size
+@mixin size-wh($width, $height) {
+    width: $width;
+    height: $height;
+}

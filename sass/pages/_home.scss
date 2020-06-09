@@ -1,0 +1,664 @@
+// === All Section ===
+.title {
+    @include raleway;
+    @include font-sw (36px, 400);
+    color: $title-color;
+    line-height: 43px;
+    text-transform: uppercase;
+}
+.subtitle {
+    @include font-sw (20px, 700);
+    color: $subtitles-color;
+}
+.description {
+    @include font-sw (14px, 400);
+    color: #86878b;
+    line-height: 20px;
+}
+.small-title {
+    @include font-sw (14px, 600);
+    color: #212121;
+    line-height: 17px;
+}
+.orange-line {
+    @include size-wh (64px, 2px);
+    background-color: $main-orange-color;
+    margin: 25px 0;
+    &--center {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+// === Banner ===
+.banner {
+    height: 713px;
+    background-color: black;
+    background-image: url(../../images/home/banner/banner-bg.png);
+    &--flex {
+        display: flex;
+        height: 100%;
+    }
+    &__left {
+        flex: 0 1 65%;
+        margin-top: 110px;
+    }
+    &__right {
+        flex: 0 1 35%;
+        align-self: center;
+        width: 360px;
+        padding-right: 50px;
+    }
+    &__title {
+        @include raleway;
+        @include font-sw (36px, 400);
+        max-width: 520px;
+        margin-top: 33px;
+    }
+    &__line {
+        width: 64px;
+        height: 3px;
+        background-color: #fff;
+        margin:  40px 0;
+    }
+    &__text {
+        @include raleway;
+        @include font-sw (16px, 16px);
+        line-height: 23px;
+        max-width: 470px;
+    }
+    &__button {
+        @include font-sw (15px, 400);
+        cursor: pointer;
+        margin-top: 44px;
+        background-color: transparent;
+        color: #fff;
+        padding: 15px 32px;
+        border: 3px solid #fff;
+        transition: all 0.3s;
+        &:hover {
+            background-color: $main-orange-color;
+            border-color: $main-orange-color;
+        }
+    }
+    &__form-block {
+        background-color: #fff;
+    }
+    &__form-top {
+        @include font-sw (20px, 700);
+        color:  $main-dark-color;
+        padding: 16px 0;
+        text-align: center;
+        background-color: #f5f5f5;
+        &--span {
+            color: $main-orange-color;
+        }
+    }
+    &__form {
+        width: 80%;
+        box-sizing: border-box;
+        margin: 0 auto;
+    }
+    &__form-input {
+        box-sizing: border-box;
+        @include font-sw (14px, 400);
+        width: 100%;
+        border: none;
+        margin-top: 20px;
+        color: #bdbdbd;
+        text-indent: 10px;
+        border-bottom: 1px solid #bdbdbd;
+        padding: 10px 0;
+        outline: none;
+    }
+    &__form-button {
+        @include font-sw (15px, 400);
+        cursor: pointer;
+        width: 100%;
+        padding: 20px 0;
+        background-color: $main-orange-color;
+        border: none;
+        color: #fff;
+        margin-top: 40px;
+        transition: background-color 0.3s;
+        &:hover {
+            background-color: #c4621c;
+        }
+    }
+}
+
+// === Social Media ===
+.social-media {
+    &--flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    &__text {
+        max-width: 370px;
+        padding-right: 50px;
+    }
+    &__icon {
+        margin: 0 20px;
+        font-size: 50px;
+        cursor: pointer;
+        color: #cccccc;
+        transition: color 0.3s;
+        &:last-child {
+            margin-right: 0;
+        }
+        &:hover {
+            color: $main-orange-color;
+        }
+    }
+    &__description {
+        margin-top: 10px;
+    }
+}
+
+// === Tabs ===
+.tabs {
+    padding: 150px 0 110px 0;
+    background-color: $silver-bg;
+    &--flex {
+        display: flex;
+        align-items: center;
+    }
+    &__block {
+        @include flex-center;
+        cursor: pointer;
+        height: 112px;
+        width: 112px;
+        background-color: $main-dark-color;
+        transition: background-color 0.3s;
+        &:hover {
+            background-color: #ff8b38;
+        }
+        margin-bottom: 5px;
+    }
+    &__text {
+        align-self: flex-start;
+        padding: 0 40px 0 70px;
+        &--off {
+            display: none;
+        }
+        &--on {
+            display: block;
+        }
+    }
+    &__description {
+        margin-top: 50px;
+    }
+    &__blocks-tab {
+        align-self: flex-start;
+    }
+}
+
+// === Sublist ===
+.sublist {
+    padding: 110px 0 130px 0;
+    &--flex {
+        display: flex;
+    }
+    &__text {
+        padding-left: 50px;
+    }
+    &__block{
+        display: flex;
+        align-items: flex-start;
+    }
+    &__small-title {
+        margin-bottom: 10px;
+    }
+    &__block{
+        margin-top: 40px;
+    }
+    &__block-text {
+        padding-left: 20px;
+    }
+
+}
+
+// === Pictures ===
+.pictures {
+    padding: 75px 0;
+    background-color: $silver-bg;
+    &--flex {
+        display: flex;
+    }
+    &__text {
+        padding-right: 50px;
+    }
+}
+
+//  === Why Us ===
+.why-us {
+    padding: 105px 0;
+    text-align: center;
+    &__orange-line {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &__blocks {
+        display: flex;
+        margin-top: 70px;
+    }
+    &__block {
+        padding-right: 10px;
+        &:last-child {
+            padding-right: 0px;
+        }
+    }
+    &__subtitle {
+        margin: 24px 0;
+    }
+}
+
+// === Price ===
+.price {
+    padding: 100px 0 90px 0;
+    background-color: $silver-bg;
+    text-align: center;
+    &__orange-line {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &__blocks {
+        display: flex;
+        align-items: flex-end;
+        margin-top: 80px;
+    }
+    &__block {
+        background-color: $price-bg;
+        width: 100%;
+        margin-right: 40px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &__subtitle {
+        color: #fff;
+        border-bottom: 2px solid $silver-bg;
+        padding: 10px 0;
+    }
+    &__number {
+        @include raleway;
+        @include font-sw (70px, 700);
+        margin: 20px 0 ;
+    }
+    &__info {
+        color: #8d8d8d;
+        padding-bottom: 20px;
+        font-style: italic;
+    }
+    &__line {
+        @include size-wh (100%, 5px);
+        background-color: #ff8b38;
+        &--second {
+            height: auto;
+            padding: 12px 0;
+        }
+    }
+    &__list-item {
+        @include font-sw (14px, 400);
+        color: #86878b;
+        line-height: 24px;
+        text-transform: uppercase;
+        border-bottom: 1px solid #86878b;
+        padding: 10px 0;
+    }
+}
+
+// === Reviews ===
+.reviews {
+    padding: 100px 0;
+    &__blocks {
+        display: flex;
+    }
+    &__title, &__description {
+        text-align: center;
+    }
+    &__block {
+        margin-right: 120px;
+        margin-top: 50px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &__comment-block {
+        @include font-sw (14px, 400);
+        color: #86878b;
+        background-color: $silver-bg;
+        padding: 20px 12px 36px 12px;
+    }
+    &__orange-line {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &__triangle {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 20px 15px 0 15px;
+        border-color: $silver-bg transparent;
+        margin-left: 20px;
+    }
+    &__contacts {
+        margin-top: 10px;
+        display: flex;
+        &-text {
+            margin-left: 30px;
+        }
+    }
+    &__image {
+        height: 70px;
+        
+    }
+}
+
+// === Download ===
+.download {
+    padding: 70px 0 60px 0;
+    text-align: center;
+    background-color: black;
+    background-image: url(../../images/home/download/bg.png);
+    &__title {
+        color: #fff;
+    }
+    &__orange-line {
+        background-color: #fff;
+    }
+    &__button {
+        margin-top: 30px;
+        padding: 12px 30px;
+        cursor: pointer;
+        border: 2px solid #fff;
+        background-color: transparent;
+        color: #fff;
+        border-radius: 3px;
+        transition: all 0.3s;
+        &:hover {
+            background-color: $main-orange-color;
+            border-color: $main-orange-color;
+        }
+    }
+}
+
+// === Contact-us ===
+.contact-us {
+    padding: 105px 0 80px 0;
+    text-align: center;
+    &__form {
+        display: flex;
+        margin-top: 80px;
+    }
+    &__item {
+        padding-bottom: 7px;
+        margin-top: 40px;
+        text-indent: 10px;
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        flex: 0 1 50%;
+        margin-right: 30px;
+    }
+    &__message {
+        flex: 0 1 50%;
+        margin-left: 30px;
+        text-indent: 10px;
+        padding-top: 10px;
+        resize: none;
+    }
+    &__button {
+        cursor: pointer;
+        text-align: center;
+        margin-top: 40px;
+        color: white;
+        border: none;
+        background-color: $main-orange-color;  
+        padding: 14px 22px;  
+        border-radius: 3px;
+        transition: all 0.3s;
+        &:hover {
+            background-color: #c4621c; 
+        }
+    }
+    &__placeholder {
+        border: none;
+        box-shadow: 0 1px 0 rgba(0, 0, 1, 0.16);
+        font-size: 14px;
+    }
+    &__placeholder::placeholder {
+        @include font-sw (14px, 400);
+        color: #bdbdbd;
+    }
+}
+
+
+// === Media ===
+@media only screen and (max-width: 1060px) {
+    .social-media {
+        &__text {
+            display: none;
+        }
+        &--flex {
+            justify-content: center;
+        }
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .reviews__block {
+        margin-right: 50px;
+    }
+    .all-center {
+        max-width: 800px;
+    }
+    .banner {
+        &__left {
+            padding-right: 50px;
+        }
+        &__right {
+            padding-right: 0;
+        }
+    }
+}
+@media only screen and (max-width: 870px) {
+    .title {
+        font-size: 24px;
+    }
+    .subtitle {
+        font-size: 18px;
+    }
+    .description {
+        font-size: 12px;
+    }
+    .banner {
+        height: 500px;
+        &__left {
+            margin-top: 60px;
+        }
+        &__right, &__left {
+            flex: 0 1 50%;
+
+        }
+        &__form-top {
+            padding-left: 10px;
+            padding-right: 10px;
+            font-size: 18px;
+        }
+        &__form-input, &__form-button, &__text, &__button {
+            font-size: 12px;
+        }
+        &__title {
+            font-size: 24px;
+        }
+        &__logo {
+            width: 130px;
+        }
+        &__line {
+            margin: 20px 0;
+        }
+    }
+    .tabs {
+        padding: 75px 0;
+        &--flex {
+            flex-direction: column;
+        }
+        &__description {
+            margin-top: 20px;
+        }
+        &__blocks-tab {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        &__block {
+            margin: 0 20px;
+        }
+        &__text {
+            margin-top: 40px;
+            padding: 0;
+        }
+        &__image {
+            display: none;
+        }
+    }
+    .sublist {
+        padding: 75px 0;
+        &__image {
+            display: none;
+        }
+        &__text {
+            padding-left: 0;
+        }
+    }
+    .pictures {
+        &__image {
+            display: none;
+        }
+    }
+    .social-media {
+        &--flex {
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+        &__icon {
+            font-size: 20px;
+        }
+    }
+    .why-us {
+        padding: 75px 0;
+    }
+    .price {
+        padding: 75px 0;
+        &__number {
+            font-size: 50px;
+        }
+        &__list-item {
+            font-size: 12px;
+        }
+    }
+    .reviews {
+        padding: 75px 0;
+        &__blocks {
+            align-items: flex-end;
+        }
+    }
+    .contact-us {
+        padding: 75px 0;
+    }
+    .navigation {
+        display: none;
+    }
+    .header {
+        &--flex {
+            justify-content: center;
+        }
+    }
+}
+@media only screen and (max-width: 670px) {
+    .why-us {
+        padding-bottom: 45px;
+        &__blocks {
+            flex-direction: column;
+        }
+        &__block {
+            margin-bottom: 30px;
+        }
+        &__subtitle {
+            margin: 14px 0;
+        }
+    }
+    .price {
+        padding-bottom: 45px;
+        &__blocks {
+            margin-top: 40px;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__block {
+            margin-right: 0;
+            margin-bottom: 30px;
+        }
+    }
+    .reviews {
+        &__blocks {
+            flex-direction: column;
+        }
+        &__block {
+            margin-right: 0;
+            width: 100%;
+        }
+    }
+    .contact-us {
+        &__form {
+            margin-top: 50px;
+            flex-direction: column;
+        }
+        &__contacts {
+            margin-right: 0px;
+        }
+        &__message {
+            margin-top: 30px;
+            margin-left: 0;
+        }
+    }
+}
+@media only screen and (max-width: 620px) {
+    .banner {
+        &__right {
+            display: none;
+        }
+        &__left {
+            flex: 0 1 100%;
+            padding-right: 0;
+        }
+    }
+} 
+@media only screen and (max-width: 560px) {
+    .tabs {
+        &__block {
+            height: 50px;
+            width: 50px;
+        }
+    }
+}
+@media only screen and (max-width: 461px) {
+    .social-media {
+        &__icon {
+            margin: 0 15px;
+        }
+    }
+}
+@media only screen and (max-width: 420px) {
+    .social-media {
+        display: none;
+    }
+}
+

@@ -1,0 +1,26 @@
+.header {
+    padding: 22px 0;
+    background-color: $header-bg-color;
+    position: sticky;
+    top: 0;
+    &--flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+    }
+}
+.navigation {
+    display: flex;
+    &__item {
+        color: #fff;
+        margin-left: 48px;
+        opacity: 0.69;
+        font-size: 14px;
+        transition: color 0.3s;
+        cursor: pointer;
+        &:hover {
+            color: $main-orange-color;
+        }
+    }
+}
